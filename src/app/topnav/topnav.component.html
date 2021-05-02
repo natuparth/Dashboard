@@ -1,0 +1,15 @@
+<div class="grid">
+<div class="homeDiv"> <div class="homeIcon"><img style="height: 20px;"  src="../../assets/home.svg"></div> </div>   
+<div class="dashboardHeader"> Dashboard </div>
+<div class="langSelector">
+    <div>
+    <img [src]="selectedCountry.icon">
+    </div>
+    <div>{{selectedCountry.name}}</div>
+    <div style="display:grid; margin-left: 20px;">
+    <i class="fa fa-caret-up" style="color: gray;" (click)="changeCountry(1)"></i>
+    <i class="fa fa-caret-down" style="color: gray; margin-top: -5px" (click)="changeCountry(-1)"></i>
+    
+    </div>
+</div>
+</div>

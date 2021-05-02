@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+html{
+    height: 100%;
+}
+
+body{  
+        margin: 2% 8%; 
+        background: linear-gradient(#b3b9d9,#fbebe4);
+        background-blend-mode: screen;
+        font-family: sans-serif;
+
+}
+
+:root{
+    --borderColor: #edf0f5
+}

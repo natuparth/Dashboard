@@ -1,0 +1,73 @@
+.profile{
+    text-align: center;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.profile img{
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+}
+.profile .settings{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 7vh;
+    left: 7vh;
+    background: white;
+    border-radius: 50%;
+}
+.profile > .name{
+    margin-top: 1vh;
+    text-align: center;
+}
+
+.profile .designation{
+ font-size: small;
+ color: darkgray;
+}
+.profile .nameHeader{
+    letter-spacing: 0.5px;
+    font-size: 15px;
+}
+
+.greenDot{
+    background-color: green; 
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5% 4%;
+    border-top: 1px solid var(--borderColor)
+}
+
+ .item{
+    border-bottom: 1px solid var(--borderColor);
+    font-size: x-small;
+    display: flex;
+    padding:5% 8% 6% 5%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.item.sub{
+    width: 100%;
+    border: none !important;
+    margin-left: 20%;
+    padding: 4% 0  !important;
+}
+
+.recentItems{
+ font-size: x-small;
+}

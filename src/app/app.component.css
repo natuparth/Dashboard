@@ -1,0 +1,12 @@
+.topNavContainer{
+    height: 3em;
+    border-bottom: 1px solid #edf0f5;
+    background: #fff;
+}
+
+.sideNavContainer{
+    border-right: 1px solid #edf0f5;
+    width: 20%;
+    background: #fff;
+    height: 100%;
+}

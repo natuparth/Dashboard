@@ -1,0 +1,36 @@
+<div class="profile">
+   <div style="position: relative;">
+      <img src="../../assets/devName.jpg">
+      <div class="settings"><i class="fa fa-cog" style="color: gray; margin-top: 7px"></i>
+      </div>
+   </div>
+   <div class="name">
+      <div class="nameHeader"> Martha Blair <span class="greenDot"></span></div>
+      <span class="designation"> Developer </span>
+   </div>
+</div>
+
+<div class="list">
+   <div  *ngFor="let item of listItems">
+   <div class="item">
+      <div style=" width: 20%;">
+         <i *ngIf="item.icon" [class]="item.icon"></i>
+         <img style="height: 20px; width: 20px" *ngIf="item.url" [src]="item.url"></div>
+     <div> {{item.name}} </div>
+     <span *ngIf="item.children">
+      <i class="fa fa-caret-up" style="color: gray;" (click)="changeCountry(1)"></i>
+      <i class="fa fa-caret-down" style="color: gray; margin-top: -5px" (click)="changeCountry(-1)"></i>
+     </span>  
+     <div class="item sub" *ngFor="let subItem of item.children">
+      {{subItem}}
+    </div>
+   </div>
+  
+   </div>
+</div>
+<div class="recentItems">
+   RECENTLY VIEWED
+ <div class="item" *ngFor="let obj of recentItems">
+{{obj}}  
+</div>    
+</div>
