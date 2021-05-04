@@ -16,7 +16,7 @@
     padding-top: 1em;
 }
 .dashboardHeader{
-    font-size: larger;
+    font-size: small;
     margin-left: 1em;
 }
 .langSelector{
@@ -28,6 +28,7 @@
     display: flex;
     padding: 0 0.5% 0 0.5%;
    align-items: center;
+   font-size: smaller;
 }
 .langSelector > div {
      margin: 5px;

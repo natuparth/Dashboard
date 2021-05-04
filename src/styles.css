@@ -8,9 +8,12 @@ body{
         background: linear-gradient(#b3b9d9,#fbebe4);
         background-blend-mode: screen;
         font-family: sans-serif;
+        overflow: hidden;
+        
 
 }
 
 :root{
-    --borderColor: #edf0f5
+    --borderColor: #edf0f5;
+    --textLight: #ababad
 }

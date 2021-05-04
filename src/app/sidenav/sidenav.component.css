@@ -48,7 +48,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 5% 4%;
+    padding: 5% 12%;
     border-top: 1px solid var(--borderColor)
 }
 
@@ -60,7 +60,15 @@
     align-items: center;
     flex-wrap: wrap;
 }
-
+.item .arrows{
+    margin-left: auto;
+}
+i{
+    color: darkgray;  
+}
+.float-right{
+    justify-self: flex-end;
+}
 .item.sub{
     width: 100%;
     border: none !important;
@@ -70,4 +78,26 @@
 
 .recentItems{
  font-size: x-small;
+ padding: 5% 12%;
+}
+
+.recentItems .header{
+    font-size: x-small;
+    color: var(--textLight);
+    padding: 4% 0 0 5%;
+}
+.recentItems .item{
+    border: none !important;
+    padding: 7% 0 0 5%;
+   
+}
+.recentItems .item .itemName{
+    width: 92%;
+}
+
+.footer{
+    border-top: 1px solid var(--borderColor);
+    margin-top: auto;
+    font-size: x-small;
+    padding: 5% 17%;  
 }

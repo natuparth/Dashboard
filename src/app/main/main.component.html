@@ -1,0 +1,61 @@
+<div class="graphHeader">
+  <div class="heading">Daily Visitors</div>
+  <div class="monthSelector">
+
+    <div>{{monthSelected.name}}</div>
+    <div style="display:grid; margin-left: 20px;">
+      <i class="fa fa-caret-up" style="color: gray;" (click)="changeMonth(1)"></i>
+      <i class="fa fa-caret-down" style="color: gray; margin-top: -5px" (click)="changeMonth(-1)"></i>
+
+    </div>
+  </div>
+  <div class="yearSelector">
+
+    <div>{{year}}</div>
+    <div style="display:grid; margin-left: 20px;">
+      <i class="fa fa-caret-up" style="color: gray;" (click)="changeYear(1)"></i>
+      <i class="fa fa-caret-down" style="color: gray; margin-top: -5px" (click)="changeYear(-1)"></i>
+
+    </div>
+  </div>
+</div>
+<div id="chart" class="graphContainer">
+  <apx-chart [series]="chartOptions.series" [chart]="chartOptions.chart" [dataLabels]="chartOptions.dataLabels"
+    [plotOptions]="chartOptions.plotOptions" [yaxis]="chartOptions.yaxis" [xaxis]="chartOptions.xaxis"
+    [fill]="chartOptions.fill"></apx-chart>
+</div>
+<div class="cardsContainer">
+  <div class="card">
+   <div class="header">Realtime Users</div>
+   <div class="number">56</div>
+   <div class="percentage">+9.8%
+     <span><i class="fa fa-external-link-square grow"></i></span>
+   </div>
+   <app-areachart [color]="colors[0]"></app-areachart>
+  </div>
+  <div class="card">
+   <div class="header">total visits</div>
+   <div class="number">54,598</div>
+   <div class="percentage red">-11.9%
+     <span><i class="fa fa-external-link-square decrease"></i></span>
+   </div>
+   <app-areachart [color]="colors[1]"></app-areachart>
+  </div>
+  <div class="card">
+    <div class="header">bounce rate</div>
+    <div class="number">73.67</div>
+    <div class="percentage">+12.2%
+      <span><i class="fa fa-external-link-square grow"></i></span>
+    </div>
+    <app-areachart [color]="colors[2]"></app-areachart>
+  </div>
+  <div class="card">
+    <div class="header">visit duration</div>
+    <div class="number">1m 4s</div>
+    <div class="percentage">+19.6%
+      <span><i class="fa fa-external-link-square grow"></i></span>
+    </div>
+    <app-areachart [color]="colors[3]"></app-areachart>
+  </div>
+
+</div>

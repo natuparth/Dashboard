@@ -18,6 +18,7 @@ export class SidenavComponent implements OnInit {
 {
   name: 'Inbox',
     icon: 'fa fa-inbox fa-lg',
+    selector: true
 },
 {
   name: 'Invoicing',
@@ -28,7 +29,15 @@ export class SidenavComponent implements OnInit {
     icon: 'fa fa-flask fa-lg',
 }];
 recentItems = ["Overall Performance", "Invoice #940", "Customer: Minerva Viewer"] 
-  constructor() { }
+dashboardExpanded = false;  
+toggleDashboard(){
+  this.dashboardExpanded = this.dashboardExpanded ? false: true;
+}
+
+random(){
+  
+}
+constructor() { }
 
   ngOnInit(): void {
   }
