@@ -145,7 +145,7 @@ export class MainComponent implements OnInit {
         }
       },
       fill: {
-        colors: ['#0c52b2'],
+        colors: ['#0604cf'],
       },
       yaxis: {
         tickAmount: 3,
