@@ -36,6 +36,9 @@ export class AreachartComponent implements OnInit {
   chartOptions : Partial<ChartOptions>;
   dataSet = [];
   @Input('color') color: string;
+  @Input() height: string;
+  @Input() width: string;
+  @Input() sparkLine: boolean;
   constructor() {
      console.log(this.color);
      setTimeout(()=>{
@@ -54,8 +57,15 @@ export class AreachartComponent implements OnInit {
         xaxis: {
          lines: {
              show: false
-         }
-     },   
+         },
+         
+     },
+     padding:{
+       left: 0,
+       right:0
+     }
+     
+     ,   
      yaxis: {
          lines: {
              show: false
@@ -68,8 +78,12 @@ export class AreachartComponent implements OnInit {
        }
      ],
      chart: {
+      sparkline: {
+        enabled: this.sparkLine || false
+      },
        type: "area",
-       height: 100,
+       height: this.height || 80,
+       width : this.width || '100%',
        zoom: {
          enabled: false
        },
@@ -80,7 +94,7 @@ export class AreachartComponent implements OnInit {
         enabled: true,
         easing: 'linear',
         dynamicAnimation: {
-          speed: 2000
+          speed: 1000
         }
       }
      },

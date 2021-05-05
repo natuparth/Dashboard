@@ -13,11 +13,11 @@ export class SidenavComponent implements OnInit {
     children: ['Page Visitors', 'Post Performance', 'Team Overall']
   },{
     name: 'Calendar',
-    icon: 'fa fa-calendar fa-lg',
+    icon: 'fa fa-calendar fa-2x',
   },
 {
   name: 'Inbox',
-    icon: 'fa fa-inbox fa-lg',
+    icon: 'fa fa-inbox fa-2x',
     selector: true
 },
 {
@@ -26,7 +26,7 @@ export class SidenavComponent implements OnInit {
 },
 {
   name: 'Lab/ Experimental',
-    icon: 'fa fa-flask fa-lg',
+    icon: 'fa fa-flask fa-2x',
 }];
 recentItems = ["Overall Performance", "Invoice #940", "Customer: Minerva Viewer"] 
 dashboardExpanded = false;  

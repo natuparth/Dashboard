@@ -26,20 +26,20 @@
 </div>
 <div class="cardsContainer">
   <div class="card">
-   <div class="header">Realtime Users</div>
-   <div class="number">56</div>
-   <div class="percentage">+9.8%
-     <span><i class="fa fa-external-link-square grow"></i></span>
-   </div>
-   <app-areachart [color]="colors[0]"></app-areachart>
+    <div class="header">Realtime Users</div>
+    <div class="number">56</div>
+    <div class="percentage">+9.8%
+      <span><i class="fa fa-external-link-square grow"></i></span>
+    </div>
+    <app-areachart [color]="colors[0]"></app-areachart>
   </div>
   <div class="card">
-   <div class="header">total visits</div>
-   <div class="number">54,598</div>
-   <div class="percentage red">-11.9%
-     <span><i class="fa fa-external-link-square decrease"></i></span>
-   </div>
-   <app-areachart [color]="colors[1]"></app-areachart>
+    <div class="header">total visits</div>
+    <div class="number">54,598</div>
+    <div class="percentage red">-11.9%
+      <span><i class="fa fa-external-link-square decrease"></i></span>
+    </div>
+    <app-areachart [color]="colors[1]"></app-areachart>
   </div>
   <div class="card">
     <div class="header">bounce rate</div>
@@ -56,6 +56,60 @@
       <span><i class="fa fa-external-link-square grow"></i></span>
     </div>
     <app-areachart [color]="colors[3]"></app-areachart>
+  </div>
+
+</div>
+<div class="tableContainer">
+  <div class="table1">
+    <div class="header">Most Visited Pages</div>
+    <table>
+      <tr>
+        <th>
+          Page Name
+        </th>
+        <th>visitors</th>
+        <th>unique page visits</th>
+        <th>bounce rate</th>
+        <th></th>
+      </tr>
+      <tr style="height: 4.2vh;" *ngFor="let item of table1Data">
+        <td>
+          {{item.pn}}
+          <span class="iconSquare"><i class="fa fa-external-link fa-lg"></i></span>
+        </td>
+        <td>{{item.v}}</td>
+        <td>{{item.upv}}</td>
+        <td>{{item.br}}</td>
+        <td>
+          <app-areachart [color]="colors[0]" [width]="'40%'" [height]="'30'" [sparkLine]="'true'"> </app-areachart>
+        </td>
+      </tr>
+
+    </table>
+  </div>
+  <div class="table2">
+    <div class="header">Social Media Traffic</div>
+    <table>
+      <tr>
+        <th>
+          Network
+        </th>
+        <th>
+          Visitors
+        </th>
+
+        <th></th>
+      </tr>
+      <tr style="height: 4.2vh;" *ngFor="let item of table2Data">
+        <td>
+          {{item.network}}
+        </td>
+        <td>{{item.visitors}}</td>
+        <td> <progress style="height: 5px;" max="100" value="{{item.progress}}"></progress></td>
+        <!-- <td ><app-areachart [color]="colors[0]" [width]="'40%'" [height]="'30'" [sparkLine]="'true'">  </app-areachart></td> -->
+      </tr>
+
+    </table>
   </div>
 
 </div>

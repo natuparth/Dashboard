@@ -3,23 +3,27 @@
     width: 100%;
     border: 1px solid var(--borderColor);
     max-height: 18vh;
-    background-color: #fcfcfc;
+    background-color: white;
 }
 .graphHeader{
+    margin-top: 2%;
     width: 100%;
     height: 5vh;
     border: 1px solid var(--borderColor);
     display: flex;
     align-items: center;
+    background-color: white;
 }
 .graphHeader .heading{
     margin: 2%;
+    font-size: small;
     
 }
 .card .number{
     margin-top: 1vh;
     font-weight: 100;
     font-size: 30px;
+    color: #6f7171;
 }
 
 .graphHeader .monthSelector,.yearSelector{
@@ -74,3 +78,58 @@
  .red{
      color: red !important;
  }
+ .tableContainer{
+     display: flex;
+     margin-top: 1em;
+ }
+ .tableContainer .header{
+    font-size: small;
+    margin: 10px 0px 0 0;
+    padding: 0 0 15px 13px;
+    border-bottom: 1px solid var(--borderColor);
+ }
+.tableContainer .table1{
+    width: 63%;
+    background: white;
+}
+.tableContainer .table2{
+    margin-left: auto;
+    /* width: 35%; */
+    background: white;
+}
+table{
+    width:100%;
+    table-layout: auto;
+    border-collapse: collapse;
+    padding-left: 4%;
+}
+th{
+    height: 3.2vh;
+    font-size: x-small;
+    text-transform: uppercase;
+    color: darkgray;
+    text-align: start;
+}
+tr {
+    border-bottom: 1px solid var(--borderColor);
+}
+td{
+    height: 5.6vh;
+    font-size: x-small;
+    color: #4a4646;
+}
+.tableContainer .table2{
+    width: 35%;
+}
+table tr td:first-child {
+    padding-left: 13px;
+  }
+  tr th:first-child{
+      padding-left: 13px;
+  }
+
+  .iconSquare{
+    float: right;
+    margin-right: 25px;
+    color: grey;
+  }

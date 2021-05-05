@@ -75,6 +75,53 @@ export class MainComponent implements OnInit {
     name: "December",
     days: "31"
   }];
+  table1Data = [{
+    pn: '/store/',
+    v: '4,890',
+    upv: '3,985',
+    br: '81.56%'
+  },
+  {
+    pn: '/store/symbols-styleguides',
+    v: '3,785',
+    upv: '3,182',
+    br: '62.56%'
+  },
+  {
+    pn: '/store/dashboard-ui-kit',
+    v: '2,985',
+    upv: '2,115',
+    br: '58.76%'
+  },
+  {
+    pn: '/store/webflow-cards.html',
+    v: '2,440',
+    upv: '1,789',
+    br: '39.59%'
+  }];
+
+  table2Data = [{
+    network: 'Instagram',
+    visitors: '3,550',
+    progress: 80
+  },
+  {
+    network: 'Facebook',
+    visitors: '2,236',
+    progress: 90
+  },
+  {
+    network: 'Twitter',
+    visitors: '1,795',
+    progress: 30
+  },
+  {
+    network: 'Linkedin',
+    visitors: '62',
+    progress: 50
+  }
+]
+  
 
   public chartOptions: Partial<ChartOptions>;
  
