@@ -15,6 +15,9 @@
 .homeIcon{
     padding-top: 1em;
 }
+.homeIcon:hover{
+    cursor: pointer;
+}
 .dashboardHeader{
     font-size: small;
     margin-left: 1em;

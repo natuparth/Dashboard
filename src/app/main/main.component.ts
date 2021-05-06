@@ -23,6 +23,7 @@ export type ChartOptions = {
   yaxis: ApexYAxis;
   xaxis: ApexXAxis;
   fill: ApexFill;
+  grid: ApexGrid,
  
   title: ApexTitleSubtitle;
 };
@@ -127,7 +128,13 @@ export class MainComponent implements OnInit {
  
   constructor() { 
     this.chartOptions =  {
-     
+    
+      grid:{
+        borderColor: "#F0F0F0",
+         row:{
+           opacity: 0.9
+         }
+      },
       series: [
         {
           name: "Visitors",
@@ -137,6 +144,7 @@ export class MainComponent implements OnInit {
       chart: {
         id: 'chart1',
         height: 150,
+        width: '100%',
         type: "bar",
         toolbar:{
           show: false

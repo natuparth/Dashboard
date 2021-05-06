@@ -68,9 +68,12 @@ export class AreachartComponent implements OnInit {
      ,   
      yaxis: {
          lines: {
-             show: false
+             show: false,
+             
          }
-     },
+     }
+    
+
       },
      series: [
        {
